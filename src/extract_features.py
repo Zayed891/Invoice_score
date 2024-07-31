@@ -7,8 +7,6 @@ def extract_features(text):
     if invoice_number_match:
         features['invoice_number'] = invoice_number_match.group(1)
     else:
-        features['invoice_number'] = None  # or handle this case as needed
-
-    # Add more features extraction here as needed
+        features['invoice_number'] = None  
 
     return features
